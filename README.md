@@ -22,9 +22,9 @@ Darbų pavyzdžiai pasiekiami iš vieno nuorodinio puslapio:
 - Mokinys:
   Algirdas Navickas
 
-# Darbų tikslai
+# Darbų tikslas
 
-- ilgainiui pateikti vis sudėtingesnius puslapių išdėstymus (lay-out).
+- Ilgainiui pateikti vis sudėtingesnius puslapių išdėstymus (lay-out).
 
 # Autorius
 
