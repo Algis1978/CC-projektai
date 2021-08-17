@@ -1,62 +1,92 @@
 body {
-    font-family: system-ui;
-    background: white;
-    color: black;
-    text-align: center;
-  }
-  main {
-    width: 98%;
-    margin: 1%;
-    background-color:lightgrey;
-  }
-  h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: lightgrey;
+  color: black;
+  text-align: center;
+}
+main {
+  width: 98%;
+  margin: 1%;
+  background-color: lightgrey;
+}
+header {
+}
+h1 {
   font-size: 2.2em;
-  padding: 0;
-  margin: 0;
   padding-top: 4%;
-  }
+}
+p {
+  font-size: 1.1em;
+}
+figure {
+  width: 36%;
+  max-width: 340px;
+  min-width: 180px;
+  background-color: rgb(240, 240, 240);
+  height: auto;
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin: auto;
+}
+img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  text-align: center;
+}
+figcaption {
+  padding-top: 2%;
+}
+article {
+  width: 80%;
+  max-width: 720px;
+  margin: auto;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+h2 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 1.3em;
+}
+ul {
+  text-align: left;
+}
+li {
+  padding-bottom: 0.8em;
+  font-size: 1.1em;
+}
+article p {
+  padding-left: 4%;
+  text-align: left;
+}
+footer {
+  font-weight: bold;
+  padding: 2%;
+}
+hr {
+  height: 2px;
+  width: 60%;
+  background-color: black;
+}
+@media (max-width: 560px) {
   p {
-   
-  }
-  figure {
-    width: 36%;
-    background-color: rgb(240, 240, 240);
-    height: auto;
-    padding: 2%;
-    margin-left:5%;
-    margin-right:5%;
-    margin:auto;
-  }
-  img {
-    width: 100%;
-    height: auto;
-    text-align:center;
-  }
-  figcaption{
-    padding-top: 2%;
-  }
-  article {
-    width: 80%;
-    margin:auto;
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-  h2 {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 1.3em;
-  }
-  ul {
-    text-align: left;
+    font-size: 1em;
   }
   li {
-    padding-bottom: 0.8em;
+    font-size: 1em;
   }
-  article p {
-    padding-left: 4%;
-    text-align: left;
-   }
-  footer {
-    font-weight: bold;
-    padding: 2%;
+  h1 {
+    font-size: 1.8em;
   }
+  h2 {
+    font-size: 1.2em;
+  }
+  article {
+    width: 96%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
