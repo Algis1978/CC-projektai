@@ -2,9 +2,7 @@
 
 # Apie
 
-Namų darbas BIT Javascript mokymuose (pradžios data: 2021 m. birželio 21 d.);<br>
-Publikuota: [„JS-arrays“]( https://algis1978.github.io/JS-arrays
-/)
+Savarankiški darbai BIT Javascript mokymuose (pradžios data: 2021 m. birželio 21 d.);
 
 # Mokymų detalės:
 
@@ -20,9 +18,13 @@ Publikuota: [„JS-arrays“]( https://algis1978.github.io/JS-arrays
 - Mokinys:
   Algirdas Navickas
 
-# Namų darbo tikslai
+# Darbų tikslai
 
-- duomenų masyve (array) išrinkimas.
+- ilgainiui pateikti vis sudėtingesnius puslapių išdėstymus (lay-out).
+
+# Pavyzdžiai:
+Visi pavyzdžiai kiek įmanoma pristaikantys ir priderinti teksto skaitytuvo darbui.
+* [„1 lygis. Biografinis apmatas“](https://algis1978.github.io/CC-projektai/)
 
 # Autorius
 
