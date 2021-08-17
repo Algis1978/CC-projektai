@@ -2,7 +2,10 @@
 
 # Apie
 
-Savarankiški darbai BIT Javascript mokymuose (pradžios data: 2021 m. birželio 21 d.);
+Savarankiški darbai BIT Javascript mokymuose (pradžios data: 2021 m. birželio 21 d.);<br>
+Darbų pavyzdžiai pasiekiami iš vieno nuorodinio puslapio:
+* [„CC projektų nuorodos“](https://algis1978.github.io/CC-projektai/)
+
 
 # Mokymų detalės:
 
@@ -21,10 +24,6 @@ Savarankiški darbai BIT Javascript mokymuose (pradžios data: 2021 m. birželio
 # Darbų tikslai
 
 - ilgainiui pateikti vis sudėtingesnius puslapių išdėstymus (lay-out).
-
-# Pavyzdžiai:
-Visi pavyzdžiai kiek įmanoma pristaikantys ir priderinti teksto skaitytuvo darbui.
-* [„1 lygis. Biografinis apmatas“](https://algis1978.github.io/CC-projektai/)
 
 # Autorius
 
