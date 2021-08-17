@@ -3,6 +3,7 @@
 # Apie
 
 Savarankiški darbai BIT Javascript mokymuose (pradžios data: 2021 m. birželio 21 d.);<br>
+Darbai atliekami atsižvelgiant į reikalavimus prisitaikančiam dizainui ir teksto skaitytuvo darbui.<br>
 Darbų pavyzdžiai pasiekiami iš vieno nuorodinio puslapio:
 * [„CC projektų nuorodos“](https://algis1978.github.io/CC-projektai/)
 
@@ -21,9 +22,9 @@ Darbų pavyzdžiai pasiekiami iš vieno nuorodinio puslapio:
 - Mokinys:
   Algirdas Navickas
 
-# Darbų tikslai
+# Darbų tikslas
 
-- ilgainiui pateikti vis sudėtingesnius puslapių išdėstymus (lay-out).
+- Ilgainiui pateikti vis sudėtingesnius puslapių išdėstymus (lay-out).
 
 # Autorius
 
