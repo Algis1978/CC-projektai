@@ -3,7 +3,7 @@
 # Apie
 
 Savarankiški darbai BIT Javascript mokymuose (pradžios data: 2021 m. birželio 21 d.);<br>
-Darb7 pavyzd=iai pasiekiami i6 vieno nuorodinio puslapio:
+Darbų pavyzdžiai pasiekiami iš vieno nuorodinio puslapio:
 * [„CC projektų nuorodos“](https://algis1978.github.io/CC-projektai/)
 
 
