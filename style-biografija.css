@@ -15,7 +15,7 @@ main {
   padding: 2%;
 }
 header, footer, article, figure {
-  width:96%;
+  width:96vmax;
   min-width: 240px;
   margin-left: auto;
   margin-right: auto;
@@ -79,8 +79,9 @@ hr {
     font-size: 1.2em;
   }
   article {
-    width: 96%;
     padding-right: 2%;
     padding-left: 2%;
   }
+  header, footer, article, figure {
+    width:86vmax;
 }
