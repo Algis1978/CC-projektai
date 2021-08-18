@@ -7,7 +7,7 @@ body {
 }
 main, header, footer, article, figure {
   max-width:720px;
-  min-width: 180px;
+  min-width: 220px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 2%;
