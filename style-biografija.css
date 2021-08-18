@@ -5,10 +5,14 @@ body {
   color: black;
   text-align: center;
 }
+body * {
+  min-width: 180px;
+}
 main {
   width: 98%;
-  margin: 1%;
+  margin: auto;
   background-color: lightgrey;
+  padding: 2%;
 }
 header {
 }
@@ -41,8 +45,8 @@ figcaption {
 }
 article {
   width: 80%;
+  margin:auto;
   max-width: 720px;
-  margin: auto;
   padding-right: 5%;
   padding-left: 5%;
 }
@@ -63,7 +67,6 @@ article p {
   text-align: left;
 }
 footer {
-  font-weight: bold;
   padding: 2%;
 }
 hr {
