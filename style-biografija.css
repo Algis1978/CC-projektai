@@ -16,6 +16,8 @@ main {
 }
 header, footer, article, figure {
   min-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 h1 {
   font-size: 2.2em;
