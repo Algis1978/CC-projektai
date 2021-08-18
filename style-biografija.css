@@ -65,7 +65,7 @@ hr {
   width: 60%;
   background-color: black;
 }
-@media (max-width: 560px) {
+@media (max-width: 480px) {
   p, li {
     font-size: 1em;
   }
@@ -75,8 +75,8 @@ hr {
   h2 {
     font-size: 1.1em;
   }
-  header, footer, article, figure {
-    width:86vmin;
+  main, header, footer, article, figure {
+    width:96vmin;
   }
   footer {
     font-size: 1em;
