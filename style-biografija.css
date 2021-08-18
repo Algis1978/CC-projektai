@@ -6,11 +6,10 @@ body {
   text-align: center;
 }
 main, header, footer, article, figure {
-  max-width:720px;
-  min-width: 220px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 2%;
+  min-width: 220px;
+  padding: 2%;
 }
 main {
   display: block;
@@ -41,7 +40,7 @@ figcaption {
   padding-top: 2%;
 }
 article {
-  max-width: 720px;
+
 }
 h2 {
   padding-top: 3%;
@@ -56,7 +55,7 @@ li {
   font-size: 1.1em;
 }
 article p {
-  padding-left: 4%;
+  padding-left: 2%;
   text-align: left;
 }
 footer {
@@ -79,6 +78,9 @@ hr {
   }
   figure {
     width: 86%;
+  }
+  article {
+    width: 100%;
   }
   footer {
     font-size: 1em;
