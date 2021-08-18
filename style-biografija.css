@@ -5,17 +5,18 @@ body {
   color: black;
   text-align: center;
 }
-main {
-  width: 96%;
-  margin: auto;
-  background-color: lightgrey;
-  padding: 2%;
-}
-header, footer, article, figure {
+main, header, footer, article, figure {
   max-width:720px;
   min-width: 180px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 2%;
+}
+main {
+  display: block;
+  width: 96%;
+  margin: auto;
+  background-color: lightgrey;
 }
 h1 {
   font-size: 2.2em;
@@ -74,10 +75,6 @@ hr {
   }
   h2 {
     font-size: 1.1em;
-  }
-  article {
-    padding-right: 2%;
-    padding-left: 2%;
   }
   header, footer, article, figure {
     width:86vmin;
