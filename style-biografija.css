@@ -31,9 +31,6 @@ figure {
   background-color: rgb(240, 240, 240);
   height: auto;
   padding: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin: auto;
 }
 img {
   width: 100%;
@@ -46,7 +43,6 @@ figcaption {
 }
 article {
   width: 80%;
-  margin:auto;
   max-width: 720px;
   padding-right: 5%;
   padding-left: 5%;
