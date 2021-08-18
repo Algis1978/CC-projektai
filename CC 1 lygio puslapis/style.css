@@ -1,0 +1,62 @@
+body {
+    font-family: system-ui;
+    background: white;
+    color: black;
+    text-align: center;
+  }
+  main {
+    width: 98%;
+    margin: auto;
+    background-color:lightgrey;
+  }
+  h1 {
+  font-size: 2.2em;
+  padding: 0;
+  margin: 0;
+  padding-top: 4%;
+  }
+  p {
+   
+  }
+  figure {
+    width: 36%;
+    background-color: rgb(240, 240, 240);
+    height: auto;
+    padding: 2%;
+    margin-left:5%;
+    margin-right:5%;
+    margin:auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    text-align:center;
+  }
+  figcaption{
+    padding-top: 2%;
+  }
+  article {
+    width: 80%;
+    margin:auto;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  h2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.3em;
+  }
+  ul {
+    text-align: left;
+  }
+  li {
+    padding-bottom: 0.8em;
+  }
+  article p {
+    padding-left: 4%;
+    text-align: left;
+   }
+  footer {
+    font-weight: bold;
+    padding: 2%;
+  }
