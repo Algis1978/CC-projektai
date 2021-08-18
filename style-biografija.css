@@ -15,7 +15,7 @@ main {
   padding: 2%;
 }
 header, footer, article, figure {
-  width:96;
+  width:96%;
   min-width: 180px;
   margin-left: auto;
   margin-right: auto;
