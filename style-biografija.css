@@ -5,7 +5,11 @@ body {
   color: black;
   text-align: center;
 }
-main, header, footer, article, figure {
+main,
+header,
+footer,
+article,
+figure {
   margin-left: auto;
   margin-right: auto;
   min-width: 220px;
@@ -40,7 +44,6 @@ figcaption {
   padding-top: 2%;
 }
 article {
-
 }
 h2 {
   padding-top: 3%;
@@ -67,7 +70,8 @@ hr {
   background-color: black;
 }
 @media (max-width: 480px) {
-  p, li {
+  p,
+  li {
     font-size: 1em;
   }
   h1 {
