@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 body {
+  background: #c2a176;
   background-image: repeating-linear-gradient(45deg, rgb(47, 47, 109), rgb(148, 64, 64) 15%, rgb(179, 179, 67) 25%);
   font-family: 'Noto Sans', sans-serif;
 }
