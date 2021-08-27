@@ -5,6 +5,7 @@ body {
 }
 header {
   margin: auto;
+  width: 70%;
   min-width: 260px;
   max-width: 660px;
   text-align:center;
