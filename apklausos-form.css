@@ -1,31 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap');
 body {
-  background-color: blueviolet;
-  font-family:helvetica;
+  background-image: repeating-linear-gradient(45deg, rgb(47, 47, 109), rgb(148, 64, 64) 15%, rgb(179, 179, 67) 25%);
+  font-family: 'Kaisei Decol', serif;
 }
 header {
   margin: auto;
+  min-width: 260px;
+  max-width: 660px;
   text-align:center;
   padding-top:4%;
   color:white;
 }
+h1 {
+  font-size: 3rem;
+}
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 form {
   margin: auto;
-  width: 60%;
+  width: 70%;
+  min-width: 260px;
+  max-width: 660px;
   padding:5%;
-  background-color:rgb(24, 10, 104);
+  background-color:rgba(12, 6, 48, 0.7);
   color:white;
-  border-radius: 30px;
+  border-radius: 10px;
+  font-size: 1.6rem;
 }
-label {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-}
-personalinfo input {
-width: 100%;
+.personalinfo input, select {
+width: 95%;
 padding-top: 1%;
 padding-bottom: 1%;
-font-size: 1rem;
+padding-left: 3%;
+font-size: 1.6rem;
+color: grey;
+border-radius: 8px;
+outline: none;
+margin-top: 6px;
+margin-bottom: 20px;
+}
+.personalinfo input:focus, select:focus {
+  border: 3px solid rgb(118, 118, 223);
+}
+.radiobuttons label, .checkboxes label {
+  padding-left: 3%;
+  line-height: 3rem;
+}
+input[type="radio"], input[type="checkbox"] {
+  transform: scale(2.4);
+  position: relative;
+  bottom: 2px
+}
+.userarea *{
+  line-height: 3rem;
+}
+.userarea textarea {
+  width:95%;
+  height:150px;
+  font-size: 1.6rem;
+  font-family: 'Kaisei Decol', serif;
+  padding: 10px 0px 0px 10px;
+  color: grey;
+  border-radius: 6px;
+}
+.userarea input {
+  width:95%;
+  background-color: rgb(70, 168, 70);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  form, header {
+    width:95%;
+    margin:-10px;
+  }
 }
