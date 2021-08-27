@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body
+  <main>
+    <header>
+      <h1>freeCodeCamp Survey Form</h1>
+      <p><i>Thank you for taking the time to help us improve the platform</i></p>
+    </header>
+    <form>
+      <div id="personalinfo">
+      <label for="Name">Name</label<br><br>
+      <input type="text" name="Name" id="Name"><br>
+      <label for="Email">Email</label><br>
+      <input type="email" name="Email" id="Email"><br>
+      <label for="Age">Age (optional)</label><br>
+      <input type="text" name="Age" id="Age"><br>
+      <label for="Options">Which option best describes your current role?</label><br>
+      <input type="text" name="Options" id="Options">
+        </div><br><br>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <input type="radio" name="definitely" id="groupradio">Definitely<br>
+        <input type="radio" name="maybe" id="groupradio">Maybe<br>
+        <input type="radio" name="" id="groupradio">Not sure<br><br>
+        <label for="favoritefeature">What is your favorite feature of freeCodeCamp?</label><br>
+        <select name="favfeatures" id="favoritefeature">
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="challenges">Challenges</option>
+          <option value="opensource">Open source</option>
+        </select><br><br>
+        <legend>What would you like to see improved? <small>(Check all that apply)</small></legend>      
+        <input type="checkbox" name="whattoimprove" value="Front-end Projects">Front-end Projects<br>      
+        <input type="checkbox" name="whattoimprove" value="Back-end Projects">Back-end Projects<br>      
+        <input type="checkbox" name="whattoimprove" value="Data Visualization">Data Visualization<br> 
+        <input type="checkbox" name="favorite_pet" value="Open Source Community">Open Source Community<br>
+        <input type="checkbox" name="whattoimprove" value="Gitter help rooms">Gitter help rooms<br>
+        <input type="checkbox" name="whattoimprove" value="Videos">Videos<br>
+        <input type="checkbox" name="whattoimprove" value="City Meetups">City Meetups<br>
+        <input type="checkbox" name="whattoimprove" value="Wiki">Wiki<br>
+        <input type="checkbox" name="whattoimprove" value="Forum">Forum<br>
+        <input type="checkbox" name="whattoimprove" value="Additional Courses">Additional Courses<br><br>           
+      <label for="textarea">Any comments or suggestions?</label><br>
+      <textarea id="textarea" name="commentsandsuggestions" rows="5" cols="50">Enter your comment here...
+      </textarea><br>
+      <input type="submit" value="Submit" />
+    </form>
+  </main>
+</body>
+</html>
