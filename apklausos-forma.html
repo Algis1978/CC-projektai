@@ -4,73 +4,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Apklausos forma</title>
   <link rel="stylesheet" href="./apklausos-form.css">
 </head>
 <body
   <main>
     <header>
-      <h1>freeCodeCamp Survey Form</h1>
-      <p><i>Thank you for taking the time to help us improve the platform</i></p>
+      <h1>Kirpyklos apklausos forma</h1>
+      <p><i>Padėkite mums sužinoti apie jūsų lūkečius!</i></p>
     </header>
     <form>
       <div class="personalinfo">
-        <label for="Name">Name</label<br><br>
-        <input type="text" name="Name" id="Name" placeholder="Enter Your Name" required><br>
-        <label for="Email">Email</label><br>
-        <input type="email" name="Email" id="Email" placeholder="Enter Your Email" required><br>
-        <label for="Age">Age (optional)</label><br>
-        <input type="text" name="Age" id="Age" placeholder="Age"><br>
-        <label for="Options">Which option best describes your current role?</label><br>
-        <input type="text" name="Options" id="Options" placeholder="Select Current Role">
+        <label for="Name">Vardas</label<br><br>
+        <input type="text" name="Name" id="Name" placeholder="Įveskite vardą" required><br>
+        <label for="Email">El. paštas</label><br>
+        <input type="email" name="Email" id="Email" placeholder="Įveskite el. pašto adresą" required><br>
+        <label for="Age">Amžius (nebūtina)</label><br>
+        <input type="text" name="Age" id="Amžius" placeholder="Įveskite savo amžių"><br>
+      <div class="selectoption"></div>     
+        <label for="Options">Kuo jūs dabar užsiimate</label><br>
+        <select name="currentrole" id="currentrole">
+          <option value="" disabled selected>Pasirinkite:</option>
+          <option value="challenges">Mokausi</option>
+          <option value="projects">Dirbu</option>
+          <option value="challenges">Dirbu ir mokausi</option>
+          <option value="opensource">Auginu vaikus</option>
+          <option value="opensource">Kita</option>
+        </select><br><br>
       </div>
       <div class="radiobuttons">
-        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <legend>Ar jūs rekomenduotumėte mūsų paslaugas kitiems?</legend>
         <input type="radio" name="recommend" id="Definitely">
-        <label for="Definitely">Definitely</label><br>     
+        <label for="Definitely">Žinoma</label><br>     
         <input type="radio" name="recommend" id="Maybe">
-        <label for="Maybe">Maybe</label><br>     
+        <label for="Maybe">Galbūt</label><br>     
         <input type="radio" name="recommend" id="Not sure">
-        <label for="Maybe">Not sure</label><br><br>
+        <label for="Maybe">Nesu tikras(-a)</label><br><br>
       </div>
       <div class="selectoption"></div>     
-        <label for="favoritefeature">What is your favorite feature of freeCodeCamp?</label><br>
+        <label for="favoritefeature">Kokios mūsų palaugos jums labiausiai patiko?</label><br>
         <select name="favfeatures" id="favoritefeature">
-          <option value="" disabled selected>Select an option</option>
-          <option value="challenges">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="challenges">Challenges</option>
-          <option value="opensource">Open source</option>
+          <option value="" disabled selected>Pasirinkite:</option>
+          <option value="challenges">Šukuosenų modeliavimas</option>
+          <option value="projects">Manikiūras ir pedikiūras</option>
+          <option value="challenges">Plaukų dažymas</option>
+          <option value="opensource">Plaukų tiesinimas ir šukavimas</option>
         </select><br><br>
       </div>
       <div class="checkboxes">
-        <legend>What would you like to see improved? <small>(Check all that apply)</small></legend>      
+        <legend>Ko jūs tikėtumėtės geresnio mūsų įmonėje? <small>(Pažymėkite punktus)</small></legend>      
         <input type="checkbox" name="whattoimprove" value="Front-end Projects">
-        <label for="Front-end Projects">Front-end Projects</label><br>     
+        <label for="Front-end Projects">Pagarbaus bendravimo su klientais</label><br>     
         <input type="checkbox" name="whattoimprove" value="Back-end Projects">      
-        <label for="Back-end Projects">Back-end Projects</label><br>      
+        <label for="Back-end Projects">Ilgesnio darbo laiko</label><br>      
         <input type="checkbox" name="whattoimprove" value="Data Visualization">
-        <label for="Data Visualization">Data Visualization</label><br>      
+        <label for="Data Visualization">Išankstinės registracijos internetu</label><br>      
         <input type="checkbox" name="favorite_pet" value="Open Source Community">
-        <label for="Open Source Community">Open Source Community</label><br>      
+        <label for="Open Source Community">Daugiau žurnalų laukiančiam klientui</label><br>      
         <input type="checkbox" name="whattoimprove" value="Gitter help rooms">
-        <label for="Gitter help rooms">Gitter help rooms</label><br>      
+        <label for="Gitter help rooms">Vaikų kampelio</label><br>      
         <input type="checkbox" name="whattoimprove" value="Videos">
-        <label for="Videos">Videos</label><br>      
+        <label for="Videos">Vaizdo ekrano laukiamajame</label><br>      
         <input type="checkbox" name="whattoimprove" value="City Meetups">
-        <label for="City Meetups">City Meetups</label><br>      
+        <label for="City Meetups">Kito padalinio arčiau miesto centro</label><br>      
         <input type="checkbox" name="whattoimprove" value="Wiki">        
-        <label for="Wiki">Wiki</label><br>      
-        <input type="checkbox" name="whattoimprove" value="Forum">
-        <label for="Forum">Forum</label><br>      
-        <input type="checkbox" name="whattoimprove" value="Additional Courses">
-        <label for="Additional Courses">Additional Courses</label><br><br>      
+        <label for="Wiki">Naujienlaiškio</label><br><br>         
       </div>
       <div class="userarea">         
-        <label for="userinput">Any comments or suggestions?</label><br>
-        <textarea id="userinput" name="commentsandsuggestions" rows="5" cols="50">Enter your comment here...
+        <label for="userinput">Turite papildomų komentarų?</label><br>
+        <textarea id="userinput" name="commentsandsuggestions" rows="5" cols="50">Dalinkitės čia...
         </textarea><br><br></b>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Pateikite duomenis" />
       </div> 
     </form>
   </main>

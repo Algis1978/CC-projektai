@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 body {
   background-image: repeating-linear-gradient(45deg, rgb(47, 47, 109), rgb(148, 64, 64) 15%, rgb(179, 179, 67) 25%);
-  font-family: 'Kaisei Decol', serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 header {
   margin: auto;
