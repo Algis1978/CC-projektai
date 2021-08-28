@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 body {
   background: #c2a176;
-  background-image: repeating-linear-gradient(45deg, rgb(47, 47, 109), rgb(148, 64, 64) 15%, rgb(179, 179, 67) 25%);
-  font-family: 'Noto Sans', sans-serif;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgb(47, 47, 109),
+    rgb(148, 64, 64) 15%,
+    rgb(179, 179, 67) 25%
+  );
+  font-family: "Noto Sans", sans-serif;
 }
 header {
   margin: auto;
   width: 70%;
   min-width: 260px;
   max-width: 660px;
-  text-align:center;
-  padding-top:4%;
-  color:white;
+  text-align: center;
+  padding-top: 4%;
+  color: white;
 }
 h1 {
   font-size: 3rem;
@@ -24,44 +29,48 @@ form {
   width: 70%;
   min-width: 260px;
   max-width: 660px;
-  padding:5%;
-  background-color:rgba(12, 6, 48, 0.7);
-  color:white;
+  padding: 5%;
+  background-color: rgba(12, 6, 48, 0.7);
+  color: white;
   border-radius: 10px;
   font-size: 1.6rem;
 }
-.personalinfo input, select {
-width: 95%;
-padding-top: 1%;
-padding-bottom: 1%;
-padding-left: 3%;
-font-size: 1.6rem;
-color: grey;
-border-radius: 8px;
-outline: none;
-margin-top: 6px;
-margin-bottom: 20px;
+.personalinfo input,
+select {
+  width: 95%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  font-size: 1.6rem;
+  color: grey;
+  border-radius: 8px;
+  outline: none;
+  margin-top: 6px;
+  margin-bottom: 20px;
 }
-.personalinfo input:focus, select:focus {
+.personalinfo input:focus,
+select:focus {
   border: 3px solid rgb(118, 118, 223);
 }
-.radiobuttons label, .checkboxes label {
+.radiobuttons label,
+.checkboxes label {
   padding-left: 3%;
   line-height: 3rem;
 }
-input[type="radio"], input[type="checkbox"] {
-  transform: scale(2.4);
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(2);
   position: relative;
-  bottom: 2px
+  bottom: 3px;
 }
-.userarea *{
+.userarea * {
   line-height: 3rem;
 }
 .userarea textarea {
-  width:95%;
-  height:150px;
+  width: 95%;
+  height: 150px;
   font-size: 1.6rem;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   padding: 10px 0px 0px 10px;
   color: grey;
   border-radius: 6px;
@@ -80,8 +89,10 @@ input[type="radio"], input[type="checkbox"] {
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-  form, header {
-    width:95%;
-    margin:-10px;
+  form,
+  header {
+    width: 85vw;
+    margin-left: -3px;
+    margin-right: 0px;
   }
 }
