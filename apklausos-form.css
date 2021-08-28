@@ -99,5 +99,6 @@ input[type="checkbox"] {
   }
   h1 {
     font-size: 2rem;
+    max-width: none;
   }
 }

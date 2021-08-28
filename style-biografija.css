@@ -35,8 +35,10 @@ figure {
   padding: 2%;
 }
 img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   max-width: 340px;
+  margin: auto;
   height: auto;
   text-align: center;
 }
@@ -67,6 +69,7 @@ footer {
 hr {
   height: 2px;
   width: 60%;
+  max-width: 720px;
   background-color: black;
 }
 @media (max-width: 480px) {
