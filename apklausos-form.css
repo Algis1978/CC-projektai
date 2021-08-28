@@ -10,8 +10,8 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 header {
-  margin: auto;
   width: 70%;
+  margin: auto;
   min-width: 260px;
   max-width: 660px;
   text-align: center;
@@ -25,8 +25,8 @@ p {
   font-size: 1.6rem;
 }
 form {
-  margin: auto;
   width: 70%;
+  margin: auto;
   min-width: 260px;
   max-width: 660px;
   padding: 5%;
@@ -89,10 +89,12 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-  form,
   header {
-    width: 85vw;
-    margin-left: -3px;
+    width: 100%;
+    margin-left: 0px;
     margin-right: 0px;
+  }
+  form {
+    width: 90%;
   }
 }
