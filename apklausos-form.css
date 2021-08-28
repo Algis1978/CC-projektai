@@ -93,11 +93,18 @@ input[type="checkbox"] {
     width: 100%;
   }
   form {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
   h1 {
     font-size: 2rem;
     max-width: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  form {
+    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 }
