@@ -16,11 +16,11 @@
     <form>
       <div class="personalinfo">
         <label for="Name">Vardas</label<br><br>
-        <input type="text" name="Name" id="Name" placeholder="Įveskite vardą" required><br>
-        <label for="Email">El. paštas</label><br>
+        <input type="text" name="name" id="name" placeholder="Įveskite vardą" required><br>
+        <label for="email">El. paštas</label><br>
         <input type="email" name="email" id="email" placeholder="Įveskite el. pašto adresą" required><br>
-        <label for="Age">Amžius (nebūtina)</label><br>
-        <input type="text" name="Age" id="Amžius" placeholder="Įveskite savo amžių"><br>
+        <label for="age">Amžius (nebūtina)</label><br>
+        <input type="number" name="age" id="age" min="1" max="100"  placeholder="Įveskite savo amžių"><br>
       <div class="selectoption"></div>     
         <label for="Options">Kuo jūs dabar užsiimate</label><br>
         <select name="currentrole" id="currentrole">
@@ -34,11 +34,11 @@
       </div>
       <div class="radiobuttons">
         <legend>Ar jūs rekomenduotumėte mūsų paslaugas kitiems?</legend>
-        <input type="radio" name="recommend" id="Definitely">
+        <input type="radio" name="recommend" id="Definitely" value="Definitely">
         <label for="Definitely">Žinoma</label><br>     
-        <input type="radio" name="recommend" id="Maybe">
+        <input type="radio" name="recommend" id="Maybe" value="Maybe">
         <label for="Maybe">Galbūt</label><br>     
-        <input type="radio" name="recommend" id="Not sure">
+        <input type="radio" name="recommend" id="Not sure" value="NotSure">
         <label for="Maybe">Nesu tikras(-a)</label><br><br>
       </div>
       <div class="selectoption"></div>     

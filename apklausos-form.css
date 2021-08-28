@@ -91,11 +91,10 @@ input[type="checkbox"] {
 @media screen and (max-width: 600px) {
   header {
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
   }
   form {
     width: 90%;
+    margin: auto;
   }
   h1 {
     font-size: 2rem;
