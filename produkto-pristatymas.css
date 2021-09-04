@@ -272,13 +272,13 @@ footer p {
   main {
     margin-top: 160px;
   }
+  footer {
+    height: 100px;
+  }
 }
 @media screen and (max-width: 345px) {
   header {
     height: 200px;
-  }
-  footer {
-    height: 100px;
   }
   main {
     margin-top: 200px;
