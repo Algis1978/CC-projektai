@@ -7,7 +7,11 @@ body {
     rgb(242, 220, 220)
   );
   background-size: auto;
+}
+body * {
   font-family: "Kaisei HarunoUmi", serif;
+  border-radius: 10px;
+  text-decoration: none;
 }
 li,
 p {
@@ -59,6 +63,8 @@ h2 {
 form {
   width: 30%;
   margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 #email {
   width: 100%;
@@ -66,5 +72,7 @@ form {
 #submit {
   width: 100px;
   background-color: darkorange;
+  margin: auto;
+  margin-top: 16px;
   border: none;
 }
