@@ -29,14 +29,19 @@ header {
     rgb(228, 228, 188),
     rgb(232, 206, 206)
   );
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 #header-img {
   width: 50px;
   float: left;
   height: auto;
+  margin-left: 24px;
 }
 h1 {
-  text-transform: capitalize;
+  text-transform: unset;
   float: left;
   font-size: 26px;
   margin: 0px;
@@ -49,7 +54,7 @@ ul {
   list-style-type: none;
 }
 li {
-  text-transform: capitalize;
+  text-transform: initial;
   display: inline-block;
   padding: 0px 24px 0px 24px;
   line-height: 60px;
@@ -57,8 +62,10 @@ li {
 main,
 footer {
   margin: auto;
-  margin-top: 40px;
   max-width: 1400px;
+}
+main {
+  margin-top: 80px;
 }
 h2,
 form {
@@ -74,7 +81,7 @@ form {
   width: fit-content;
   margin: auto;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 80px;
 }
 #email {
   width: 280px;
@@ -166,7 +173,7 @@ h3 {
   font-size: 18px;
 }
 .grid-box p {
-  text-transform: capitalize;
+  text-transform: unset;
 }
 .select {
   padding-top: 24px;
@@ -261,5 +268,19 @@ footer p {
   }
   .box-one img {
     height: 0px;
+  }
+  main {
+    margin-top: 160px;
+  }
+}
+@media screen and (max-width: 345px) {
+  header {
+    height: 200px;
+  }
+  footer {
+    height: 100px;
+  }
+  main {
+    margin-top: 200px;
   }
 }
