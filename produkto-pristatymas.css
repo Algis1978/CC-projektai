@@ -12,6 +12,8 @@ body * {
   font-family: "Kaisei HarunoUmi", serif;
   border-radius: 10px;
   text-decoration: none;
+  margin: 0;
+  color: black;
 }
 li {
   font-size: 16px;
@@ -49,8 +51,11 @@ h1 {
 nav {
   float: right;
 }
-main {
+main,
+footer {
+  margin: auto;
   margin-top: 60px;
+  max-width: 1400px;
 }
 h2,
 form {
@@ -63,38 +68,122 @@ h2 {
   text-transform: initial;
 }
 form {
-  width: 30%;
+  width: fit-content;
   margin: auto;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 #email {
-  width: 100%;
+  width: 240px;
+  height: 24px;
+  outline: none;
+  padding: 4px 0px 4px 6px;
+}
+#email::placeholder {
+  font-size: 16px;
+  text-transform: unset;
+}
+form p {
+  width: fit-content;
+  margin: auto;
 }
 #submit {
-  width: 100px;
-  background-color: darkorange;
+  background-color: rgb(237, 216, 100);
   margin: auto;
   margin-top: 16px;
+  text-transform: uppercase;
+  font-size: 16px;
   border: none;
+  padding: 2px 24px 2px 24px;
+}
+#submit:hover {
+  cursor: pointer;
 }
 .box-container {
   display: flex;
   width: 80%;
   margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .box-one {
   width: 20%;
+  max-width: 200px;
+  justify-content: center;
+  text-align: center;
+}
+.box-one img {
+  height: 70px;
 }
 .box-two {
   width: 80%;
+  max-width: 1200px;
 }
 .box-two h2 {
   text-align: left;
   margin: 0;
+  padding-top: 0px;
 }
 iframe {
   display: block;
   width: 560px;
   margin: auto;
+}
+#grid {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  grid-template-columns: 1fr 280px 280px 280px 1fr;
+  gap: 12px;
+}
+.grid-box {
+  border: 1px solid black;
+}
+.grid-box * {
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+h3 {
+  background-color: rgb(220, 218, 218);
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px;
+}
+.price {
+  font-weight: bold;
+  font-size: 22px;
+}
+.grid-box a {
+  text-transform: uppercase;
+  padding: 6px 24px 6px 24px;
+  background-color: rgb(237, 216, 100);
+  font-size: 18px;
+}
+.grid-box p {
+  text-transform: capitalize;
+}
+.select {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.animation:hover {
+  animation-name: button-animation;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes button-animation {
+  0% {
+    background-color: gold;
+  }
+  100% {
+    background-color: rgb(232, 177, 110);
+  }
+}
+footer {
+  width: 80%;
+  min-width: 280px;
+  background-color: rgb(220, 218, 218);
 }
