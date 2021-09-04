@@ -192,6 +192,19 @@ h3 {
     background-color: rgb(232, 177, 110);
   }
 }
+.li-animation:hover {
+  animation-name: li-animation;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes li-animation {
+  0% {
+    background-color: rgb(213, 203, 203);
+  }
+  100% {
+    background-color: rgb(237, 216, 100);
+  }
+}
 footer {
   width: 80%;
   height: 72px;
