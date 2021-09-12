@@ -66,10 +66,11 @@ p {
 @media screen and (max-width: 720px) {
   nav {
     position: relative;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
+    margin-right: 4px;
     overflow: auto;
-    width: 100%;
+    width: 98%;
     height: 200px;
     min-width: 320px;
   }
