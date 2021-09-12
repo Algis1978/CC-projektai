@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+body {
+  background-color: rgb(255, 234, 206);
+}
+Main {
+  padding: 30px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+}
+h1,
+h2,
+p,
+li {
+  font-family: "Lora", serif;
+}
+p {
+  margin: 2px, 0px, 2px, 10px;
+  text-indent: 18px;
+}
+code {
+  padding: 1px, 0px, 1px, 8px;
+}
