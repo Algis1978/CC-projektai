@@ -2,8 +2,10 @@
 
 body * {
   font-family: "PT Serif", serif;
+  font-size: 1.4rem;
   color: aliceblue;
   background-color: rgb(44, 47, 90);
+  transition: 0.2s;
 }
 header {
   height: fit-content;
@@ -12,10 +14,30 @@ header {
   top: 0;
   background-color: brown;
 }
-#navbar {
+#navbar * {
+  float: right;
+  background-color: brown;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-right: 36px;
+}
+#navbar li {
+  text-transform: initial;
+  display: inline-block;
+}
+#navbar li a {
+  text-decoration: none;
+  padding: 12px 24px 12px 24px;
+  line-height: 60px;
+}
+#navbar li a:hover {
+  background-color: rgb(44, 47, 90);
 }
 #welcome-section {
   height: 100vh;
+  width: 100vw;
 }
 footer {
   height: fit-content;
