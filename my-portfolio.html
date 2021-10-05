@@ -7,14 +7,15 @@
     <meta name="description" content="Trumpa A. Navicko HTML/CSS/JavaScript darbų apžvalga">
     <title>My portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./my-portfolio.css">
+    <link rel="stylesheet" href="./my-portfolio-upper.css">
+    <link rel="stylesheet" href="./my-portfolio-lower.css">
 </head>
 <body>
     <header>
         <nav id="navbar">
             <ul>
                 <li><a href="">Apie mane</a></li>
-                <li><a href="#my-projects">Darbai</a></li>
+                <li><a href="#projects">Darbai</a></li>
                 <li><a href="">Kontaktai</a></li>
             </ul>
         </nav>
@@ -23,10 +24,20 @@
         <section id="welcome-section">
                 <h1>Sveiki, mano vardas Algirdas</h1>
                 <p>pradedantis WEB programuotojas</p>
-                <p><a href="#my-projects"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
+                <p><a href="#projects"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
         </section>
         <section id="projects">
-            <div class="project-tile"></div>
+            <div class="container">
+                <div class="row"></div>
+                <div class="row">
+                    <div class="project-tile"></div>
+                    <div class="project-tile"></div>
+                    <div class="project-tile"></div>
+                </div>
+                <div class="row">
+                    <div class="project-tile"></div>
+                </div> 
+            </div>      
         </section>
     </main>
     <footer></footer>
