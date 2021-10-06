@@ -41,6 +41,21 @@
 }
 #footer-row a:hover {
   color: gold;
+  animation-name: footer-row;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes footer-row{
+    0% {
+      letter-spacing: 2px
+    }
+    50% {
+      letter-spacing: 4px
+    }
+    100% {
+      letter-spacing: 2px
+    }
 }
 @media screen and (max-width: 800px) {
   .container {
