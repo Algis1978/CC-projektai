@@ -3,7 +3,7 @@
   width: 100%;
 }
 #goodbye-section h2 {
-  padding-top: 15%;
+  padding-top: 20%;
   font-size: 3rem;
   text-align: center;
   letter-spacing: 4px;
@@ -43,6 +43,30 @@ footer p {
 footer p a {
   text-decoration: none;
   color: gold;
+}
+@media screen and (min-height: 720px) {
+  #goodbye-section h2 {
+    font-size: 2.8rem;
+    padding-top: 25%;
+  }
+  #goodbye-section p {
+    font-size: 2rem;
+  }
+  #goodbye-section i {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-height: 600px) {
+  #goodbye-section h2 {
+    font-size: 2.6rem;
+    padding-top: 20%;
+  }
+  #goodbye-section p {
+    font-size: 1.8rem;
+  }
+  #goodbye-section i {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-height: 520px) {
   #goodbye-section h2 {
