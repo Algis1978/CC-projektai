@@ -96,6 +96,18 @@ header {
     font-size: 1.8rem;
   }
 }
+@media screen and (min-height: 600px) {
+  #welcome-section h1 {
+    font-size: 2.4rem;
+    padding-top: 20%;
+  }
+  #welcome-section p {
+    font-size: 1.8rem;
+  }
+  #navbar li a {
+    line-height: 60px;
+  }
+}
 @media screen and (max-height: 420px) {
   #welcome-section h1 {
     font-size: 2.2rem;
