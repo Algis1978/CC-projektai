@@ -46,16 +46,16 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-@keyframes footer-row{
-    0% {
-      letter-spacing: 2px
-    }
-    50% {
-      letter-spacing: 4px
-    }
-    100% {
-      letter-spacing: 2px
-    }
+@keyframes footer-row {
+  0% {
+    letter-spacing: 2px;
+  }
+  50% {
+    letter-spacing: 4px;
+  }
+  100% {
+    letter-spacing: 2px;
+  }
 }
 @media screen and (max-width: 800px) {
   .container {
@@ -97,6 +97,8 @@
 figure img {
   width: 100%;
   height: 100%;
+  border: 3px solid rgba(255, 217, 0, 0);
+  border-radius: 4px;
 }
 figcaption {
   text-align: center;
@@ -107,6 +109,9 @@ figcaption a {
 }
 figcaption i {
   color: gold;
+}
+figure img:hover {
+  border: 3px solid gold;
 }
 figcaption a:hover {
   color: gold;

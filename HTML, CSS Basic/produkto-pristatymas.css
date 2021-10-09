@@ -9,6 +9,7 @@ body {
     rgb(242, 220, 220)
   );
   background-size: auto;
+  transition: 0.2s;
 }
 body * {
   font-family: "Kaisei HarunoUmi", serif;
