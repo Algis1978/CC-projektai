@@ -139,5 +139,5 @@ console.log ("Darbas. Nr.18. \n  Sukurkite penktą skyrelį ir į jį sudėkite 
 let nuotraukos = ['šuo', 'katė', 'automobilis', 'namas', 'kiemas'];
 pinigine.push(nuotraukos);
 pinigine[4].sort(function(a, b){return a.length-b.length});
-console.log(pinigine); 
+console.log(pinigine);
 

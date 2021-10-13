@@ -73,7 +73,7 @@ for (let i = 0; i>=0&&vienodiSkaiciai; i++) {
     let skaicius2 = Math.round(Math.random()*10);
     console.log(skaicius1+", "+skaicius2);
     if (skaicius1==skaicius2){
-        vienodiSkaiciai = false;0
+        vienodiSkaiciai = false;
     }
 }
 console.log ("Darbas. Nr.14 \n console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). Skaičiuoti abiejų skaičių sumas skirtinguose kintamuosiuose. Ciklą kartoti tol, kol kiekviena iš sumų bus daugiau nei 100)");
