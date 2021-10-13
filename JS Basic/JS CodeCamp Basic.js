@@ -6,7 +6,6 @@ function celsijusIFarenheit (laipsnisC) {
     return laipsnisF;
 }
 console.log("farenheitasICelsiju(10): "+celsijusIFarenheit(10));
-document.write("1. farenheitasICelsiju(10): "+celsijusIFarenheit(10)+"<br>");
 
 console.log("Funkcija nr. 2");
 console.log("Žodžio perrašymas atbulai");
@@ -33,7 +32,6 @@ function faktorialas (skaicius) {
     return skaicius;
 }
 console.log("faktorialas(8): "+faktorialas(8));
-document.write("3. faktorialas(8): "+faktorialas(8)+"<br>");
 
 console.log("Funkcija nr. 4");
 console.log("Ilgiausio žodžio radimas eilutėje");
@@ -54,4 +52,73 @@ function ilgiausiasZodis (zodis) {
 }
 ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu')
 console.log("ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu'): ilgiausias žodis: „"+ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu')[0]+"“, ilgis: "+ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu')[1]+" simbolių.");
-document.write("4. ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu'): ilgiausias žodis: „"+ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu')[0]+"“, ilgis: "+ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu')[1]+" simbolių.<br>");
+
+console.log("Funkcija nr. 5");
+console.log("Iš keletos masyvų viename masyve išrinkti didžiausius skaičius į atskyrą masyvą.");
+function largestOfFour(arr) {
+    let top4 = [];
+  for (let i = 0; i<arr.length; i++){
+    let largestNumber=-Infinity;
+    for (let j = 0; j<arr[i].length; j++) 
+    if (arr[i][j] >= largestNumber) {
+      largestNumber = arr[i][j]
+    }
+    top4.push(largestNumber)
+  }
+  return top4;
+}
+
+console.log("Funkcija nr. 6");
+console.log("Patikrinti, ar pirmo argumento teksto eilutė baigiasi antro argumento teksto eilute");
+
+function confirmEnding(str, target) {
+    let mString = "";
+    for (let i = target.length; i >0; i--) {
+        mString += str[str.length-i]
+    }
+    if (mString === target) {
+        return true
+    }
+    return false
+}
+
+console.log("Funkcija nr. 7");
+console.log("Pakartoti pirmu argumentu duotą teksto eilutę antro argumento kartų ir išvesti nauja eilute. Jei antras argumentas nėra teigiamas skaičius, grąžinti tuščią tekstą.");
+
+function repeatStringNumTimes(str, num) {
+  if (num<=0) {
+      return ""
+  }
+  let newString = "";
+  for (let i=1; i<=num; i++) {
+      newString += str
+  }
+  return newString
+}
+
+console.log("Funkcija nr. 8");
+console.log("Sutrumpinti pirmu argumentu duotą teksto eilutę iki antro argumento simbolių skaičiaus ir pridėti '...' Jei eilutė ilgesnė arba lygi, ją ir grąžinti");
+
+function truncateString(str, num) {
+    return str.length>num ? str.slice(0, num)+'...' : str
+}
+
+console.log("Funkcija nr. 9");
+console.log("Iteruoti pirmo argumento masyvą ir grąžinti pirmą elementą, kuris atitinka antro argumento funkciją. Jei tokių nebus rasta, grąžinti 'undefined'.");
+
+function findElement(arr, func) {
+  return arr.find(func);
+}
+
+console.log("Funkcija nr. 10");
+console.log("Patikrinti, ar argumentas yra Būlio vertė. Grąžinti true arba false.");
+
+function booWho(bool) {
+    if (bool===true||bool===false) {
+        return true
+    }
+  return false;
+}
+
+console.log(booWho(null));
+
