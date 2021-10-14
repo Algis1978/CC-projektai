@@ -18,7 +18,6 @@ function zodisAtbulai (zodis) {
     return zodisAtbulai;
 }
 console.log("zodisAtbulai('Lietuva'): "+zodisAtbulai("Lietuva"));
-document.write("2. zodisAtbulai('Lietuva'): "+zodisAtbulai("Lietuva")+"<br>");
 
 console.log("Funkcija nr. 3");
 console.log("Faktorialo radimas");
@@ -55,18 +54,19 @@ console.log("ilgiausiasZodis('Mano tavo ausys liko pajūry saulėlydžio metu'):
 
 console.log("Funkcija nr. 5");
 console.log("Iš keletos masyvų viename masyve išrinkti didžiausius skaičius į atskyrą masyvą.");
-function largestOfFour(arr) {
-    let top4 = [];
+function largestOfArray(arr) {
+    let topNumbers = [];
   for (let i = 0; i<arr.length; i++){
     let largestNumber=-Infinity;
     for (let j = 0; j<arr[i].length; j++) 
     if (arr[i][j] >= largestNumber) {
       largestNumber = arr[i][j]
     }
-    top4.push(largestNumber)
+    topNumbers.push(largestNumber)
   }
-  return top4;
+  return topNumbers;
 }
+console.log("largestOfArray([[4, 8, -34, 145], [0, -189, 32, 14], [7, 102], [-23, Infinity, 1004, 7]]): " + largestOfArray([[4, 8, -34, 145], [0, -189, 32, 14], [7, 102], [-23, Infinity, 1004, 7]]));
 
 console.log("Funkcija nr. 6");
 console.log("Patikrinti, ar pirmo argumento teksto eilutė baigiasi antro argumento teksto eilute");
@@ -81,6 +81,8 @@ function confirmEnding(str, target) {
     }
     return false
 }
+console.log("confirmEnding('Nemunas teka, vingiuoja', 'uoja'): "+confirmEnding('Nemunas teka, vingiuoja', 'uoja'))
+console.log("confirmEnding('Nemunas teka, vingiuoja', 'eeja'): "+confirmEnding('Nemunas teka, vingiuoja', 'eeja'))
 
 console.log("Funkcija nr. 7");
 console.log("Pakartoti pirmu argumentu duotą teksto eilutę antro argumento kartų ir išvesti nauja eilute. Jei antras argumentas nėra teigiamas skaičius, grąžinti tuščią tekstą.");
@@ -95,6 +97,7 @@ function repeatStringNumTimes(str, num) {
   }
   return newString
 }
+console.log("repeatStringNumTimes('Taip ', 5): "+ repeatStringNumTimes('Taip ', 5))
 
 console.log("Funkcija nr. 8");
 console.log("Sutrumpinti pirmu argumentu duotą teksto eilutę iki antro argumento simbolių skaičiaus ir pridėti '...' Jei eilutė ilgesnė arba lygi, ją ir grąžinti");
@@ -102,6 +105,7 @@ console.log("Sutrumpinti pirmu argumentu duotą teksto eilutę iki antro argumen
 function truncateString(str, num) {
     return str.length>num ? str.slice(0, num)+'...' : str
 }
+console.log("truncateString('Nemunas teka, vingiuoja', 10): "+truncateString('Nemunas teka, vingiuoja', 10))
 
 console.log("Funkcija nr. 9");
 console.log("Iteruoti pirmo argumento masyvą ir grąžinti pirmą elementą, kuris atitinka antro argumento funkciją. Jei tokių nebus rasta, grąžinti 'undefined'.");
@@ -110,15 +114,18 @@ function findElement(arr, func) {
   return arr.find(func);
 }
 
+console.log("findElement([7, 5, 6, 8], (num) => num%2 === 0): "+findElement([7, 5, 6, 8], (num) => num%2 === 0))
+
 console.log("Funkcija nr. 10");
 console.log("Patikrinti, ar argumentas yra Būlio vertė. Grąžinti true arba false.");
 
-function booWho(bool) {
+function arBulioVerte(bool) {
     if (bool===true||bool===false) {
         return true
     }
   return false;
 }
-
-console.log(booWho(null));
+console.log("arBulioVerte(null): "+arBulioVerte(null))
+console.log("arBulioVerte(false): "+arBulioVerte(false))
+console.log("arBulioVerte('la-la-la'): "+arBulioVerte('la-la-la'))
 
