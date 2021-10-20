@@ -83,12 +83,95 @@ for (i=0; i<array.length; i++){
 }
 // Elementų events
 // Padaryti tai ką liepia mygtukai Header1 sekcijoje;
+temp = document.getElementsByTagName("h1")
+let button = document.getElementById("h1-color");
+let funkcija1 = () => {
+    for (i=0; i<temp.length; i++) {
+    temp[i].style.color="lightgreen"
+    }
+}
+button.addEventListener("click", funkcija1)
+
+button = document.getElementById("h1-font");
+let funkcija2 = () => {
+    for (i=0; i<temp.length; i++) {
+    temp[i].style.fontSize="10px"
+    }
+}
+button.addEventListener("click", funkcija2)
 // Padaryti, kad paspaudus ant i tago jis pakeistų fonto svorį į bold;
+let tempI = document.getElementsByTagName("i")
+let funkcija3 = () => {
+     for (i=0; i<tempI.length; i++) {
+     tempI[i].style.fontWeight="bold"
+    }
+}
+for (i=0; i<tempI.length; i++) {
+    tempI[i].addEventListener("click", funkcija3)
+}
+
 // Padaryti, kad paspaudus ant tago su klase prices, backgroundas pasikeistų į pilką, o paspaudus dar kartą vėl grįžtu į baltą spalvą;
+let tempPrices = document.querySelectorAll(".prices")
+let funkcija4 = () => {
+     for (i=0; i<tempPrices.length; i++) {
+     tempPrices[i].style.backgroundColor="grey"
+    }
+}
+for (i=0; i<tempPrices.length; i++) {
+    tempPrices[i].addEventListener("click", funkcija4)
+}
+
 // Padaryti, kad paspaudus ant tago su id contacts, tam tagui būtų pridėta css savybė color = orange;
+let tempContacts = document.querySelectorAll("#contacts")
+let funkcija5 = () => {
+     for (i=0; i<tempContacts.length; i++) {
+     tempContacts[i].style.color="orange"
+    }
+}
+for (i=0; i<tempContacts.length; i++) {
+    tempContacts[i].addEventListener("click", funkcija5)
+    console.log(tempContacts[i])
+}
 // Padaryti taip, kad paspaudus ant padidinti, esančio tage su id contacts, tagui su id contacts būtų pridėta css savybė fontSize = 20px;
+tempPadidinti = document.querySelectorAll("#contacts u")
+let funkcija6 = () => {
+     for (i=0; i<tempContacts.length; i++) {
+     tempContacts[i].style.fontSize="20px"
+    }
+}
+for (i=0; i<tempPadidinti.length; i++) {
+    tempPadidinti[i].addEventListener("click", funkcija6)
+    console.log(tempPadidinti[i])
+}
 // Padaryti taip, kad paspaudus ant X, esančio tage su id contacts, pridėtos tage su id contacts savybės būtų panaikintos https://stackoverflow.com/questions/18691655/remove-style-on-element
+tempPanaikinti = document.querySelectorAll("#contacts b")
+let funkcija7 = () => {
+     for (i=0; i<tempContacts.length; i++) {
+         tempContacts[i].style.fontSize=null
+         tempContacts[i].style.color=null
+    }
+}
+for (i=0; i<tempPanaikinti.length; i++) {
+    tempPanaikinti[i].addEventListener("click", funkcija7)
+}
+
 // Padaryti tai ką liepia mygtukai Header2 sekcijoje;
+temp = document.getElementsByTagName("h1")
+button = document.getElementById("h1-color-back");
+let funkcija8 = () => {
+    for (i=0; i<temp.length; i++) {
+    temp[i].style.color=null
+    }
+}
+button.addEventListener("click", funkcija8)
+
+button = document.getElementById("h1-font-back");
+let funkcija9 = () => {
+    for (i=0; i<temp.length; i++) {
+    temp[i].style.fontSize=null
+    }
+}
+button.addEventListener("click", funkcija9)
 // Elementų grupių events
 // Padaryti, kad dukartus paspaudus ant naujų gyvūnų jie nusispalvintu raudonai https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event
 // Padaryti, kad paspaudus ant gyvūno jis būtų atvaizduojamas 130% didesniu fonto dydžiu. “PATINKA” tas neturi galioti.
