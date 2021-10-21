@@ -104,13 +104,14 @@ for (i=0; i<temp3bold.length; i++) {
 let temp3prices = document.querySelectorAll(".prices")
 let funkcija4 = () => {
      for (i=0; i<temp3prices.length; i++) {
-     temp3prices[i].style.backgroundColor="grey"
+    if (!temp3prices[i].style.backgroundColor){
+    temp3prices[i].style.backgroundColor="grey";}
+    else {temp3prices[i].style.backgroundColor=null;}
     }
 }
 for (i=0; i<temp3prices.length; i++) {
     temp3prices[i].addEventListener("click", funkcija4)
 }
-
 // Padaryti, kad paspaudus ant tago su id contacts, tam tagui būtų pridėta css savybė color = orange;
 let temp3Contacts = document.querySelectorAll("#contacts")
 let funkcija5 = () => {
