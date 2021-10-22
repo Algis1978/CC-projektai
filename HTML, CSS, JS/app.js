@@ -15,14 +15,19 @@ for (i=0; i<temp1.length; i++) {
     temp1[i].classList.remove("main") 
 }
 // Tik tam h2 tagui, kuris iškart eina po h1 tagui pridėti klasę first ir pašalinti klasę main;
-temp1 = document.getElementsByTagName("h1+h2")
-temp1[0].classList.remove("main")
-temp1[0].classList.add("first")
+temp1 = document.querySelectorAll("h1+h2")
+for (i=0; i<temp1.length; i++) {
+    temp1[i].classList.remove("main")
+    temp1[i].classList.add("first")
+}
+
 // Pirmam span tagui, kuris yra h2 viduje sumažinti fonto dydį iki 10px ir nudažyti pilkai
-temp1 = document.querySelector("h2+span")
-temp1.style.fontSize = "10px"
-temp1.style.backgroundColor = "grey"
-//____________________________________________________
+temp1 = document.querySelectorAll("h2 span:first-child")
+for (i=0; i<temp1.length; i++) {
+    temp1[i].style.fontSize = "10px"
+    temp1[i].style.backgroundColor = "grey"
+}
+// ____________________________________________________
 
 // Elemetų grupės (nodeList) skaičiavimus išvest į consolę
 // Suskaičiuoti kiek yra h2 tagų;
@@ -35,7 +40,7 @@ console.log("Dokumente esančių h2 elementų be klasės „first“ skaičius: 
 // Visus h2 tagus nuspalvinti šviesiai mėlynai
 temp2 = document.getElementsByTagName("h2")
 for (i=0; i<temp2.length; i++) {
-    temp2[i].style.color = "lightblue"
+    temp2[i].style.backgroundColor = "lightblue"
 }
 // Tagų, kurie yra div su klase prices, viduje esantiems h2 tagams pridėti klasę price-tag;
 temp2 = document.querySelectorAll("div.prices h2")
@@ -43,33 +48,33 @@ for (i=0; i<temp2.length; i++) {
     temp2[i].classList.add("price-tag")
 }
 // Pabraukti visus tagus su klase new;
-temp2 = document.querySelectorAll("*.new")
+temp2 = document.querySelectorAll("* .new")
 for (i=0; i<temp2.length; i++) {
-    temp2[i].style.textDecoration = "underline"
+    temp2[i].style.borderBottom = "1px solid black"
 }
-// Suskaičiuoti kiek yra gyvūnų kategorijų ir žirafų (jos yra ul tagai);
+// Suskaičiuoti kiek yra gyvūnų ir žirafų kategorijų (jos yra ul tagai);
 temp2 = document.getElementsByTagName("ul")
 console.log("Dokumente esančių gyvūnų kategorijų ir žirafų skaičius: "+temp2.length+".")
 // Tagus ul apibraukite rėmeliais ir uždėkite 15px paddingą viršuje ir apačioje ir 50px paddingą kairėje ir dešinėje;
 for (i=0; i<temp2.length; i++) {
     temp2[i].style.border = "2px solid darkorange"
-    temp2[i].style.padding = "15px 50px 15px 50px"
+    temp2[i].style.padding = "15px 50px"
 }
 // Suskaičiuoti kiek yra naujų gyvūnų (su klase new);
 temp2 = document.querySelectorAll("*.new")
 console.log("Dokumente esančių naujų gyvūnų skaičius: "+temp2.length+".")
-// Suskaičiuoti atskirai kiek yra naujų gyvūnų kiekvienoje kategorijoje;
-let temp2newInZirafos = document.querySelectorAll("#zirafos .new")
-console.log("Naujų gyvūnų skaičius kategorijoje „Žirafos“: "+temp2newInZirafos.length+".")
-let temp2newInPlesrunai = document.querySelectorAll("#plesrunai .new")
-console.log("Naujų gyvūnų skaičius kategorijoje „Plėšrūnai“: "+temp2newInPlesrunai.length+".")
-let temp2newInGyvates = document.querySelectorAll("#gyvates .new")
-console.log("Naujų gyvūnų skaičius kategorijoje „Gyvatės“: "+temp2newInGyvates.length+".")
-let temp2newInZoliaedziai = document.querySelectorAll("#zoliaedziai .new")
-console.log("Naujų gyvūnų skaičius kategorijoje „Žoliaėdžiai“: "+temp2newInZoliaedziai.length+".")
+// // Suskaičiuoti atskirai kiek yra naujų gyvūnų kiekvienoje kategorijoje;
+// let temp2newInZirafos = document.querySelectorAll("#zirafos .new")
+// console.log("Naujų gyvūnų skaičius kategorijoje „Žirafos“: "+temp2newInZirafos.length+".")
+// let temp2newInPlesrunai = document.querySelectorAll("#plesrunai .new")
+// console.log("Naujų gyvūnų skaičius kategorijoje „Plėšrūnai“: "+temp2newInPlesrunai.length+".")
+// let temp2newInGyvates = document.querySelectorAll("#gyvates .new")
+// console.log("Naujų gyvūnų skaičius kategorijoje „Gyvatės“: "+temp2newInGyvates.length+".")
+// let temp2newInZoliaedziai = document.querySelectorAll("#zoliaedziai .new")
+// console.log("Naujų gyvūnų skaičius kategorijoje „Žoliaėdžiai“: "+temp2newInZoliaedziai.length+".")
 
 
-//____________________________________________________
+// //____________________________________________________
 
 // Elementų events
 // Padaryti tai ką liepia mygtukai Header1 sekcijoje;
@@ -167,7 +172,7 @@ button.addEventListener("click", funkcija9)
 //____________________________________________________
 
 // Elementų grupių events
-// Padaryti, kad dukartus paspaudus ant naujų gyvūnų jie nusispalvintu raudonai https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event
+// Padaryti, kad du kartus paspaudus ant naujų gyvūnų jie nusispalvintu raudonai https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event
 let temp4 = document.querySelectorAll("ul .new")
 let funkcija10 = () => {
     for (i=0; i<temp4.length; i++) {
