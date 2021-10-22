@@ -63,15 +63,15 @@ for (i=0; i<temp2.length; i++) {
 // Suskaičiuoti kiek yra naujų gyvūnų (su klase new);
 temp2 = document.querySelectorAll("*.new")
 console.log("Dokumente esančių naujų gyvūnų skaičius: "+temp2.length+".")
-// // Suskaičiuoti atskirai kiek yra naujų gyvūnų kiekvienoje kategorijoje;
-// let temp2newInZirafos = document.querySelectorAll("#zirafos .new")
-// console.log("Naujų gyvūnų skaičius kategorijoje „Žirafos“: "+temp2newInZirafos.length+".")
-// let temp2newInPlesrunai = document.querySelectorAll("#plesrunai .new")
-// console.log("Naujų gyvūnų skaičius kategorijoje „Plėšrūnai“: "+temp2newInPlesrunai.length+".")
-// let temp2newInGyvates = document.querySelectorAll("#gyvates .new")
-// console.log("Naujų gyvūnų skaičius kategorijoje „Gyvatės“: "+temp2newInGyvates.length+".")
-// let temp2newInZoliaedziai = document.querySelectorAll("#zoliaedziai .new")
-// console.log("Naujų gyvūnų skaičius kategorijoje „Žoliaėdžiai“: "+temp2newInZoliaedziai.length+".")
+// Suskaičiuoti atskirai kiek yra naujų gyvūnų kiekvienoje kategorijoje;
+let temp2newInZirafos = document.querySelectorAll("#zirafos .new")
+console.log("Naujų gyvūnų skaičius kategorijoje „Žirafos“: "+temp2newInZirafos.length+".")
+let temp2newInPlesrunai = document.querySelectorAll("#plesrunai .new")
+console.log("Naujų gyvūnų skaičius kategorijoje „Plėšrūnai“: "+temp2newInPlesrunai.length+".")
+let temp2newInGyvates = document.querySelectorAll("#gyvates .new")
+console.log("Naujų gyvūnų skaičius kategorijoje „Gyvatės“: "+temp2newInGyvates.length+".")
+let temp2newInZoliaedziai = document.querySelectorAll("#zoliaedziai .new")
+console.log("Naujų gyvūnų skaičius kategorijoje „Žoliaėdžiai“: "+temp2newInZoliaedziai.length+".")
 
 
 // //____________________________________________________
