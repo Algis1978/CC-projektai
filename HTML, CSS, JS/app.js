@@ -15,11 +15,11 @@ for (i=0; i<temp1.length; i++) {
     temp1[i].classList.remove("main") 
 }
 // Tik tam h2 tagui, kuris iškart eina po h1 tagui pridėti klasę first ir pašalinti klasę main;
-temp1 = document.getElementsByTagName("h2")
+temp1 = document.getElementsByTagName("h1+h2")
 temp1[0].classList.remove("main")
 temp1[0].classList.add("first")
 // Pirmam span tagui, kuris yra h2 viduje sumažinti fonto dydį iki 10px ir nudažyti pilkai
-temp1 = document.querySelector("h2 span")
+temp1 = document.querySelector("h2+span")
 temp1.style.fontSize = "10px"
 temp1.style.backgroundColor = "grey"
 //____________________________________________________
