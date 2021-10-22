@@ -136,8 +136,11 @@ for (i=0; i<temp3Padidinti.length; i++) {
 temp3Panaikinti = document.querySelectorAll("#contacts b")
 let funkcija7 = () => {
      for (i=0; i<temp3Contacts.length; i++) {
+        if (temp3Contacts[i].style.color=="orange") {
+            temp3Contacts[i].removeEventListener("click", funkcija5)
+        }
          temp3Contacts[i].style.fontSize=null
-         temp3Contacts[i].style.color=null
+         temp3Contacts[i].style.color=null    
     }
 }
 for (i=0; i<temp3Panaikinti.length; i++) {
@@ -187,38 +190,98 @@ let funkcija11 = () => {
     temp4like[i].style.fontSize=null
     }
 }
-    for (i=0; i<temp4bigger.length; i++) {
-    temp4bigger[i].addEventListener("click", funkcija11)
-    }
+for (i=0; i<temp4bigger.length; i++) {
+temp4bigger[i].addEventListener("click", funkcija11)
+}
 // Padaryti, kad paspaudus ant “PATINKA”, atitinkamai sekcijai būtų priskirta klasė like;
-let temp4sekcija1 = document.querySelector("#zirafos")
-let temp4patinka1 = document.querySelector("#zirafos .like-button")
+let temp4ul = document.querySelectorAll("ul")
+
 let funkcija12 = () => {
-    temp4sekcija1.classList.add("like")
+    for (let i = 0; i<temp4ul.length; i++){
+        let temp4patinka = document.querySelectorAll(".like-button")
+        let funkcija13 = () => {
+            temp4ul[i].classList.add("like")
+        }
+        temp4patinka[i].addEventListener("click", funkcija13)
+    }
 }
-temp4patinka1.addEventListener("click", funkcija12)
-let temp4sekcija2 = document.querySelector("#zoliaedziai")
-let temp4patinka2 = document.querySelector("#zoliaedziai .like-button")
-let funkcija13 = () => {
-    temp4sekcija2.classList.add("like")
-}
-temp4patinka2.addEventListener("click", funkcija13)
-let temp4sekcija3 = document.querySelector("#plesrunai")
-let temp4patinka3 = document.querySelector("#plesrunai .like-button")
-let funkcija14 = () => {
-    temp4sekcija3.classList.add("like")
-}
-temp4patinka3.addEventListener("click", funkcija14)
-let temp4sekcija4 = document.querySelector("#gyvates")
-let temp4patinka4 = document.querySelector("#gyvates .like-button")
-let funkcija15 = () => {
-    temp4sekcija4.classList.add("like")
-}
-temp4patinka4.addEventListener("click", funkcija15)
+funkcija12()
+
 //____________________________________________________
 
 // Dinaminis elementų kūrimas (su createElement)
 // Dinamiškai su JS pridėti naują kainą “Senjorai tik: 1.99 eur”;
+let kaina1 =  document.createElement("h2")
+kaina1.textContent = "Senjorai tik: 1.99 eur"
+let temp5 = document.querySelector(".prices")
+temp5.appendChild(kaina1)
+
 // Dinamiškai su JS Pridėti naują kainą “Senjorų grupė iki 10: tik 5.99 eur” Padaryti, kad pridėtas elementas turėtų klasę new ir ant jo paklikinus jis pasidarytų žalias;
+let kaina2 =  document.createElement("h2")
+kaina2.textContent = "Senjorų grupė iki 10: tik 5.99 eur"
+kaina2.classList.add("new")
+let funkcija16 = () => {
+    kaina2.style.color="lightgreen"
+    }
+kaina2.addEventListener("click", funkcija16)
+temp5.appendChild(kaina2)
+
 // Dinamiškai su JS kiekvienoje gyvūnų kategorijoje po “PATINKA” pridėkite dar vieną li elementą “NEPATINKA”, kurį paspaudus atitinkamoje sekcijoje būtų nuimta klasė like
+
+temp5 = document.querySelectorAll("ul .like-button")
+for (let i=0; i<temp5.length; i++) {
+    let nepatinka = document.createElement("li")
+    nepatinka.textContent = "NEPATINKA"
+    nepatinka.classList.add("not-like")
+    temp5[i].insertAdjacentElement('afterend', nepatinka)
+}
+
+let temp5ul = document.querySelectorAll("ul")
+
+let funkcija14 = () => {
+    for (let i = 0; i<temp5ul.length; i++){
+        let temp5nepatinka = document.querySelectorAll(".not-like")
+        let funkcija15 = () => {
+            temp5ul[i].classList.remove("like")
+        }
+        temp5nepatinka[i].addEventListener("click", funkcija15)
+    }
+}
+funkcija14()
 // Dinamiškai su JS sukurkite naują mygtukų grupę HEADER 3 naudojant analogišką html tagų struktūrą kaip ir HEADER 1 ir HEADER 2. Pirmas mygtukas vadintųsi, “Pabraukti H1 tagą”, o antras “Nepabraukti H1 tagą”. Mygtukai turi daryti tai kas ant jų parašyta
+let fieldset = document.createElement("fieldset")
+let legend = document.createElement("legend")
+legend.textContent = "HEADER3"
+let button1 = document.createElement("button")
+button1.id = "h1-underline"
+button1.textContent = "Pabraukti H1 tagą"
+let button2 = document.createElement("button")
+button2.id = "h1-no-underline"
+button2.textContent = "Nepabraukti H1 tagą"
+
+fieldset.appendChild(legend)
+fieldset.appendChild(button1)
+fieldset.appendChild(button2)
+
+temp5 = document.querySelector("#contacts")
+console.log(temp5)
+temp5.insertAdjacentElement('beforebegin', fieldset)
+
+//mygtukų funkcijos
+temp5 = document.getElementsByTagName("h1")
+
+button = document.getElementById("h1-underline");
+let funkcija17 = () => {
+    for (i=0; i<temp5.length; i++) {
+    temp5[i].style.textDecoration="underline"
+    }
+}
+button.addEventListener("click", funkcija17)
+
+button = document.getElementById("h1-no-underline");
+let funkcija18 = () => {
+    for (i=0; i<temp5.length; i++) {
+    temp5[i].style.textDecoration="none"
+    }
+}
+button.addEventListener("click", funkcija18)
